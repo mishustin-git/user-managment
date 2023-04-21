@@ -16,6 +16,16 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
+                        {{ __('Posts') }}
+                    </x-nav-link>
+                </div>
+                <!-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
+                        {{ __('Users') }}
+                    </x-nav-link>
+                </div> -->
             </div>
 
             <!-- Settings Dropdown -->
